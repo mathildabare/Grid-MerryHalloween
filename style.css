@@ -1,0 +1,274 @@
+/*
+ * Général
+ * ***** */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 
+ * Colors
+ * ****** */
+.bg-lightgrey {
+    background-color: lightgrey;
+}
+
+.bg-grey {
+
+    background-color: gray;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+
+/* 
+ * Navbar
+ * ****** */
+
+.navbar {
+    grid-area: nav;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-item {
+    padding: 0 1em;
+}
+
+.links {
+    font-size: large;
+    padding: 10px;
+}
+
+
+
+/* 
+ * Header
+ * ****** */
+
+.header {
+    grid-area: head;
+    padding: 50px;
+}
+
+.bg-image {
+    background-image: url(IMGs/fond.jpeg);
+    display: flex;
+    width: 93%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.head-btn {
+    padding: 20px;
+
+}
+
+
+/* 
+ * Main
+ * **** */
+.main {
+
+    grid-area: main;
+    padding: 50px;
+}
+
+.card {
+    margin: 8px;
+    background-color: darkgray;
+    text-align: center;
+    padding: 10px;
+}
+
+.card>h5 {
+    text-align: end;
+}
+
+/* 
+ * Contact
+ * ******** */
+
+
+.contact {
+    grid-area: contact;
+    padding: 50px;
+}
+
+.contactBox {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+.mailName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.sujet {
+
+    padding-bottom: 25px;
+}
+
+
+.send-btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 20px;
+    font-size: small;
+    margin: 20px;
+    border: 2px solid black;
+    background-color: silver;
+    margin: 0 15px;
+
+}
+
+/* 
+ * Footer
+ * ****** */
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    min-height: 28vh;
+}
+
+.p1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* 
+ * Grid
+ * **** */
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 7vh auto auto auto 250px;
+    grid-template-areas:
+        "nav nav nav nav"
+        "head head head head"
+        "main main main main"
+        "contact contact contact contact"
+        "footer footer footer footer";
+    grid-row-gap: 10px;
+}
+
+
+
+/* 
+ * Padding & Margin
+ * **************** */
+
+.pl-1 {
+    padding-left: 1em;
+}
+
+.formulaire {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.mrgb-1 {
+    margin-bottom: 1em;
+}
+
+/* 
+ * Flex
+ * **** */
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.jus-cont-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.align-i-center {
+    display: flex;
+    align-items: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+
+    width: 100%;
+}
+
+
+
+/* 
+ * @Media
+ * ****** */
+
+
+@media screen and (max-width: 960px) {
+    .cont {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 7vh auto auto auto 250px;
+        grid-template-areas:
+            "nav nav nav nav"
+            "head head head head"
+            "main main main main"
+            "contact contact contact contact"
+            "footer footer footer footer";
+    }
+
+    .allCards {
+
+        display: flex;
+        flex-direction: column;
+    }
