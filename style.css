@@ -71,7 +71,7 @@
 .bg-image {
     background-image: url(IMGs/fond.jpeg);
     display: flex;
-    width: 93%;
+    width: 100%;
     height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
