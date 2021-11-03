@@ -161,13 +161,59 @@
     min-height: 28vh;
 }
 
-.p1 {
-    display: flex;
+
+/* 
+ * P2
+ * ** */
+
+.newsletter {
+
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    font-size: 10pt;
+
 }
 
+/* 
+ * P3
+ * ** */
+
+.allIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 25pt;
+}
+
+.icons {
+
+    text-align: center;
+    color: solid black;
+
+
+}
+
+
+/* 
+ * P4
+ * ** */
+
+.asso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para {
+text-align: center;
+
+}
+
+.img-asso{
+    padding: 30px;
+}
 
 /* 
  * Grid
@@ -176,7 +222,7 @@
 .cont {
     display: grid;
     grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: 7vh auto auto auto 250px;
+    grid-template-rows: 7vh auto auto auto auto;
     grid-template-areas:
         "nav nav nav nav"
         "head head head head"
@@ -184,6 +230,20 @@
         "contact contact contact contact"
         "footer footer footer footer";
     grid-row-gap: 10px;
+}
+
+
+
+
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas:
+        "part1 part2"
+        "part3 part4";
+    grid-column-gap: 10%;
 }
 
 
@@ -208,7 +268,19 @@
 }
 
 .mrgb-1 {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.mrgt-1 {
+    margin-top: 2em;
+}
+
+.mrgl-1 {
+    margin-left: 1em;
+}
+
+.mrgr-1 {
+    margin-right: 1em;
 }
 
 /* 
@@ -258,7 +330,7 @@
         min-height: 100vh;
         display: grid;
         grid-template-columns: repeat(4, 25vw);
-        grid-template-rows: 7vh auto auto auto 250px;
+        grid-template-rows: 7vh auto auto auto auto;
         grid-template-areas:
             "nav nav nav nav"
             "head head head head"
@@ -267,8 +339,25 @@
             "footer footer footer footer";
     }
 
+
+    .footerGrid {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+        grid-template-areas:
+            "part1 part2"
+            "part3 part4";
+        grid-column-gap: 10%;
+    }
+    
+    
+
+
     .allCards {
 
         display: flex;
         flex-direction: column;
     }
+}
