@@ -38,6 +38,123 @@
 }
 
 
+
+/* 
+ * Text
+ * **** */
+
+.txt-center {
+    text-align: center;
+}
+
+
+/* 
+ * Padding & Margin
+ * **************** */
+
+.padl-1 {
+    padding-left: 1em;
+}
+
+.pad-1{
+    padding: 1em;
+}
+
+.pad-2{
+
+    padding: 2em;
+    }
+    
+
+.mrg-1{
+
+margin: 1em;
+}
+
+
+
+.mrgb-1 {
+    margin-bottom: 1em;
+}
+
+
+.mrgb-2 {
+    margin-bottom: 2em;
+}
+
+.mrgt-2 {
+    margin-top: 2em;
+}
+
+
+
+.mrgl-1 {
+    margin-left: 1em;
+}
+
+.mrgr-1 {
+    margin-right: 1em;
+}
+
+
+
+
+/* 
+ * Flex
+ * **** */
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.jus-cont-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.just-cont-center {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.align-i-center {
+    display: flex;
+    align-items: center;
+}
+
+
+.flx-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 
+ * Width & Height
+ * ************** */
+
+
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+
+    width: 100%;
+}
+
+
+
+
 /* 
  * Navbar
  * ****** */
@@ -111,9 +228,12 @@
  * ******** */
 
 
+
+
 .contact {
     grid-area: contact;
-    padding: 50px;
+    padding: auto;
+    margin: auto;
 }
 
 .contactBox {
@@ -122,13 +242,20 @@
     margin: 20px;
 }
 
+.formulaire {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
 
 .mailName {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 25px;
+    
 }
+
 
 .sujet {
 
@@ -136,20 +263,7 @@
 }
 
 
-.send-btn {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 20px;
-    font-size: small;
-    margin: 20px;
-    border: 2px solid black;
-    background-color: silver;
-    margin: 0 15px;
-
-}
 
 /* 
  * Footer
@@ -199,7 +313,7 @@
  * P4
  * ** */
 
-.asso{
+.asso {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,11 +321,11 @@
 }
 
 .para {
-text-align: center;
+    text-align: center;
 
 }
 
-.img-asso{
+.img-asso {
     padding: 30px;
 }
 
@@ -248,74 +362,6 @@ text-align: center;
 
 
 
-/* 
- * Padding & Margin
- * **************** */
-
-.pl-1 {
-    padding-left: 1em;
-}
-
-.formulaire {
-    width: 100%;
-    height: 50%;
-    padding: 0;
-    margin: 0;
-}
-
-.txt-center {
-    text-align: center;
-}
-
-.mrgb-1 {
-    margin-bottom: 2em;
-}
-
-.mrgt-1 {
-    margin-top: 2em;
-}
-
-.mrgl-1 {
-    margin-left: 1em;
-}
-
-.mrgr-1 {
-    margin-right: 1em;
-}
-
-/* 
- * Flex
- * **** */
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-}
-
-.jus-cont-spacebetween {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.align-i-center {
-    display: flex;
-    align-items: center;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-100 {
-
-    width: 100%;
-}
 
 
 
@@ -351,8 +397,8 @@ text-align: center;
             "part3 part4";
         grid-column-gap: 10%;
     }
-    
-    
+
+
 
 
     .allCards {
