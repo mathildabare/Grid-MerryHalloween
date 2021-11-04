@@ -66,11 +66,12 @@
 }
 
 
+
+
 .mrg-1 {
 
     margin: 1em;
 }
-
 
 
 .mrgb-1 {
@@ -85,7 +86,6 @@
 .mrgt-2 {
     margin-top: 2em;
 }
-
 
 
 .mrgl-1 {
@@ -164,6 +164,8 @@
  * ****** */
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
     grid-area: nav;
     width: 100%;
     position: fixed;
@@ -213,7 +215,7 @@
 .main {
 
     grid-area: main;
-    padding: 50px;
+    padding: 2%;
 }
 
 .card {
@@ -225,6 +227,11 @@
 
 .card>h5 {
     text-align: end;
+}
+
+.jack {
+    width: 50%;
+    height: 50%;
 }
 
 /* 
@@ -299,12 +306,16 @@
 }
 
 
- .part2 {
+.part2 {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     margin-left: 15%;
 }
 
+.img-asso {
+    width: 100%;
+    height: 100%;
+}
 
 /* 
  * Grid
@@ -346,44 +357,12 @@
  * ****** */
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 640px) {
 
 
-    .navbar {
-
-        grid-area: nav;
-        width: auto;
-        position: fixed;
-    }
 
 
-    .header {
-        grid-area: head;
-        width: auto;
-    }
-
-
-    .main {
-
-        grid-area : main;
-        width: auto;
-    }
-
-
-    .contact {
-        grid-area: contact;
-        width: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-
-    .footer {
-
-        grid-area: footer;
-        width: auto;
-    }
-
+    /** Grid **/
 
     .cont {
         width: 100%;
@@ -399,7 +378,6 @@
             "footer footer footer footer";
     }
 
-
     .footerGrid {
         min-width: 100%;
         min-height: 100vh;
@@ -409,9 +387,46 @@
         grid-template-areas:
             "part1"
             "part2";
-        row-gap: 10%;
     }
 
+
+
+
+    /** Navbar **/
+
+
+
+
+    .navbar {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        grid-area: nav;
+        position: fixed;
+    }
+
+
+    /** Header **/
+
+
+    .header {
+        display: grid;
+        grid-area: head;
+        width: auto;
+    }
+
+
+
+    /** Main **/
+
+
+    .main {
+        display: grid;
+        grid-area: main;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
 
 
@@ -420,4 +435,57 @@
         display: flex;
         flex-direction: column;
     }
+
+    .jack {
+
+        width: 40%;
+        height: 65%;
+    }
+
+    /** Contact **/
+
+
+    .contact {
+        display: flex;
+        grid-area: contact;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .formulaire {
+        display: flex;
+        margin-top: 15%;
+        width: 100%;
+
+    }
+
+    .mailName {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /** Footer **/
+
+
+
+
+    .footerGrid {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "part1"
+            "part2";
+        row-gap: 30px;
+    }
+
+    .img-asso {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
 }
