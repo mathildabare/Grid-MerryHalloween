@@ -188,7 +188,7 @@ margin: 1em;
 .bg-image {
     background-image: url(IMGs/fond.jpeg);
     display: flex;
-    width: 100%;
+    width: auto;
     height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -335,7 +335,7 @@ margin: 1em;
 
 .cont {
     display: grid;
-    grid-template-columns: repeat(4, 25vw);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: 7vh auto auto auto auto;
     grid-template-areas:
         "nav nav nav nav"
@@ -371,6 +371,21 @@ margin: 1em;
 
 
 @media screen and (max-width: 960px) {
+   
+   
+   .navbar {
+   
+        grid-area: nav;
+        width: auto;
+        position: fixed;
+   }
+   
+   .header {
+    grid-area: head;
+width: auto;
+}
+
+   
     .cont {
         width: 100%;
         min-height: 100vh;
