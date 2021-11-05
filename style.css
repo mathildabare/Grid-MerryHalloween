@@ -8,6 +8,11 @@
     list-style: none;
     text-decoration: none;
 }
+a:link{
+    color:black 
+}
+
+
 
 /* 
  * Colors
@@ -323,35 +328,22 @@
 
 
 
-.part1 {
+.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-content: center;
-    
+    align-items:  center inherit;
 }
 
-.part2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-}
-
-.allIcons {
+.icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-}
-
-
-.icons {
     font-size: 25pt;
     padding-top: 5%;
     text-align: center;
     color: solid black;
-    
 }
 
 
