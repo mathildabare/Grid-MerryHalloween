@@ -61,6 +61,9 @@
     padding-left: 1em;
 }
 
+.padb-1 {
+    padding-bottom: 1em;
+}
 .pad-1 {
     padding: 1em;
 }
@@ -315,34 +318,44 @@
 .footer {
     display: grid;
     grid-area: footer;
-    padding-top: 8%;
+    padding-top: 7vh;
 }
 
 
 
 .part1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     align-content: center;
-    margin-left: 15%;
+    
+}
+
+.part2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.allIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 
 .icons {
     font-size: 25pt;
     padding-top: 5%;
-
     text-align: center;
     color: solid black;
+    
 }
 
 
-.part2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15%;
-}
+
 
 .img-asso {
     width: 100%;
@@ -372,11 +385,12 @@
 
 .footerGrid {
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 30% 30%;
     grid-template-rows: 80%;
     grid-template-areas:
         "part1 part2";
-    column-gap: 10%;
+    column-gap: 20%;
+    justify-content: center;
 }
 
 
