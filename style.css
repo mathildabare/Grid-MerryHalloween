@@ -46,7 +46,8 @@
 .txt-center {
     text-align: center;
 }
-.title{
+
+.title {
     text-align: center;
     margin-bottom: 2em;
 }
@@ -73,8 +74,11 @@
 
 
 .mrg-1 {
-
     margin: 1em;
+}
+
+.mrg-2 {
+    margin: 2em;
 }
 
 
@@ -82,9 +86,14 @@
     margin-bottom: 1em;
 }
 
-
 .mrgb-2 {
     margin-bottom: 2em;
+}
+
+
+
+.mrgt-1 {
+    margin-top: 1em;
 }
 
 .mrgt-2 {
@@ -92,14 +101,24 @@
 }
 
 
+
 .mrgl-1 {
     margin-left: 1em;
 }
+
+.mrgl-2 {
+    margin-left: 2em;
+}
+
+
 
 .mrgr-1 {
     margin-right: 1em;
 }
 
+.mrgr-2 {
+    margin-right: 2em;
+}
 
 
 
@@ -296,7 +315,7 @@
 .footer {
     display: grid;
     grid-area: footer;
-    padding-top: 5%;
+    padding-top: 8%;
 }
 
 
@@ -413,7 +432,7 @@
         max-width: 100%;
         flex-direction: column;
         grid-area: nav;
-        position: fixed;
+        position: absolute;
     }
 
 
