@@ -8,8 +8,9 @@
     list-style: none;
     text-decoration: none;
 }
-a:link{
-    color:black 
+
+a:link {
+    color: black
 }
 
 
@@ -68,8 +69,9 @@ a:link{
 
 .padb-1 {
     padding-bottom: 1em;
-    
+
 }
+
 .pad-1 {
     padding: 1em;
 }
@@ -78,6 +80,7 @@ a:link{
 
     padding: 2em;
 }
+
 .padt-1 {
     padding-top: 1em;
 }
@@ -337,7 +340,7 @@ a:link{
     justify-content: center;
     flex-direction: column;
     align-content: center;
-    align-items:  center inherit;
+    align-items: center inherit;
 }
 
 
