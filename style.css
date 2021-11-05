@@ -204,10 +204,18 @@
 }
 
 .head-btn {
-    padding: 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 90px;
+    height: 60px;
 }
 
+.head-btn:hover {
+    border: 2px solid black;
+    border-radius: 4px;
+}
 
 /* 
  * Main
@@ -351,8 +359,6 @@
 
 
 
-
-
 /* 
  * @Media
  * ****** */
@@ -439,8 +445,8 @@
 
     .jack {
 
-        width: 40%;
-        height: 65%;
+        max-width: 40%;
+        max-height: 65%;
     }
 
     /** Contact **/
